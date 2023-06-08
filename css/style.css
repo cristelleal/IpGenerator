@@ -23,10 +23,6 @@
   --ca-color-background-secondary: var(--ca-color-n-050);
   --ca-color-background-tertiary : var(--ca-color-n-100);  
 
-  /* BORDER COLOR */
-
-  --ca-color-border: var(--ca-color-n-100);
-
   /*------------------------------------------------------------
   |
   | - LAYOUT
@@ -35,11 +31,6 @@
   
   --ca-layout-container: 1.25rem;
   --ca-layout-grid     : 3.625rem;
-  --ca-layout-gutter   : 1rem;
-
-  /* BORDER RADIUS */
-  
-  --ca-radius-button: .5rem;
 }
 
 /*--------------------------------------------------------------
@@ -61,7 +52,6 @@ body {
   background-color: var(--ca-color-background-secondary);
   color: var(--ca-color-n-700);
   font-family: 'Inter', sans-serif;
-  font-feature-settings: "liga", "kern";
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -82,7 +72,6 @@ a {
 a:hover { opacity: 0.6; }
 
 h1,
-h2,
 p,
 ul { margin: 5rem; }
 
@@ -130,16 +119,13 @@ h1 {
 }
 
 /*--------------------------------------------------------------
-|
-| - BUTTON
-|
+ - BUTTON
 --------------------------------------------------------------*/
 
 .button {
   background-color: var(--ca-color-background-secondary);
   color: var(--ca-color-n-700);
   text-transform: uppercase;  
-  border: 0;
   border-radius: .5rem;
   border: 1.5px solid var(--ca-color-border);
   box-sizing: border-box;
@@ -189,7 +175,6 @@ h1 {
 
 .text span { font-weight: bold; }
 
-
 /*--------------------------------------------------------------
 |
 | - FOOTER
@@ -208,5 +193,3 @@ footer a {
   font-size: small;
   font-weight: bold;
 }
-
-
