@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'adresses IP aléatoires</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+<div class="ca-layout-container ca-layout-grid">
+  <div class="container">
+  <h1>Générateur d'adresses IPv4 aléatoires</h1>
+  <label for="inputCount">Nombre d'adresses IP :</label>
+  <input type="number" id="inputCount" min="0" value="0">
+  <button class="button" onclick="generateIPs()">Générer les adresses IP</button>
+  <ul id="ipList"></ul>
+  <button class="button copy" id="copyBtn" onclick="copyIPs()">Copier 🗎</button>
+  </div> 
+</div>
+</main>
+
+<section>
+<div class="ca-layout-container ca-layout-grid">
+  <div class="container">
+    <p class="text">
+      Les <span>adresses IPv4</span> sont utilisées pour identifier les ordinateurs et les appareils connectés à un réseau informatique. 
+      <br>Une adresse IPv4 est composée de quatre octets séparés par des points, chacun pouvant prendre une valeur allant de 0 à 255. 
+      <br>Par exemple, 152.263.1.8 est une adresse IP de version 4 valide.
+    </p>
+    <p class="text">
+      Le <span>générateur d'adresses IPv4</span> est un outil qui permet de créer des adresses IP aléatoires. 
+      <br>Il peut être utilisé dans divers contextes, tels que des tests de sécurité, des simulations de scénarios de charge de réseau ou la génération d'adresses IP aléatoires pour des machines virtuelles par exemple.
+    </p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="https://github.com/cristelleal/IpGenerator" target="_blank">Github</a>
+    <a href="https://www.linkedin.com/in/cristelle-al/" target="_blank">Contact</a>
+  </div>
+</footer>  
+
+<script src="js/script.js"></script>
+</body>
+</html>
