@@ -6,7 +6,7 @@ function generateIP() {
 
   const ip = `${randomNumber}.${randomNumberTwo}.${randomNumberThree}.${randomNumberFour}`;
   return ip;
-}
+};
 
 function generateIPs() {
   const inputCount = document.getElementById("inputCount").value;
@@ -20,7 +20,7 @@ function generateIPs() {
     
     listItem.textContent = ip;
     ipList.appendChild(listItem);
-  }
+  };
 
   if (inputCount > 0) {
     ipList.style.padding = '1rem';
@@ -32,27 +32,27 @@ function generateIPs() {
     ipList.style.backgroundColor = 'initial';
     ipList.style.boxShadow = 'none';
     copyBtn.style.display = 'none';
-  }
-}
+  };
+};
 
-function copyIPs() {
-  const ipList = document.getElementById("ipList");
-  const ipText = ipList.innerText;
+async function copyIPs() {
 
-  navigator.clipboard.writeText(ipText)
-    .then(() => {
-      const copyBtn = document.getElementById("copyBtn");
-      copyBtn.textContent = "Copié ✔️";    
-      setTimeout(() => {
-        copyBtn.textContent = "Copier 🗎";
-      }, 3000);
-    })
-    .catch((error) => {
-      console.error("Erreur lors de la copie des adresses IP :", error);
-    });
-}
+  try {
+    const ipList = document.getElementById("ipList");
+    const ipText = ipList.innerText;
+    
+    await navigator.clipboard.writeText(ipText);
+    
+    const copyBtn = document.getElementById("copyBtn");
+    copyBtn.textContent = "Copié ✔️";    
+    setTimeout(() => {
+      copyBtn.textContent = "Copier 🗎";
+    }, 3000);
+  } catch (error) {
+    console.error("Erreur lors de la copie des adresses IP : ", error);
+  };
 
-window.onload = function() {
-  console.log(generateIP());
-}
+};
+
+
 
