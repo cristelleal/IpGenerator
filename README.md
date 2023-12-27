@@ -18,8 +18,4 @@ To use the Random IP Address Generator, follow these steps:
 - To copy the IP addresses, click the copy button "Copier 🗎".
 - The IP addresses will be copied to the clipboard, and you'll see "copié ✔️".
 
-## Conclusion
 
-Please note that the generated documentation provides a general overview of the project structure and functionality. You can further customize and expand the documentation based on your specific project requirements and additional details you want to include.
-
-#### If you have any further questions or need assistance, feel free to ask!
